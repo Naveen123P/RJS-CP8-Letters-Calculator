@@ -15,15 +15,17 @@ class LettersCalculator extends Component {
       <div className="bg-container">
         <div className="container-a">
           <h1 className="heading">Calculate the Letters you enter</h1>
-          <p>Enter the phrase</p>
+          <label htmlFor="aaa">Enter the phrase</label>
           <input
-            type="search"
+            type="text"
             placeholder="Enter the phrase"
             className="input"
             onChange={this.onType}
             value={phrase}
           />
-          <div className="button">No.of letters: {count}</div>
+          <div className="button">
+            <p>No.of letters: {count}</p>
+          </div>
         </div>
         <div className="img-container">
           <img
