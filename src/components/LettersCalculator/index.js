@@ -6,7 +6,7 @@ class LettersCalculator extends Component {
   state = {phrase: '', count: 0}
 
   onType = event => {
-    this.setState({phrase: event.target.value, count: this.phrase.length()})
+    this.setState({phrase: event.target.value, count: event.target.value.length()})
   }
 
   render() {
@@ -18,6 +18,7 @@ class LettersCalculator extends Component {
           <label htmlFor="aaa">Enter the phrase</label>
           <input
             type="text"
+            id="aaa"
             placeholder="Enter the phrase"
             className="input"
             onChange={this.onType}
